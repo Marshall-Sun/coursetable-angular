@@ -1,0 +1,79 @@
+<div class="selector">
+  <nz-cascader
+    [nzOptions]="nzOptions"
+    [(ngModel)]="values"
+    [nzAllowClear]="false"
+    (ngModelChange)="onChanges($event)"
+  >
+  </nz-cascader>
+</div>
+
+<nz-table
+  #colSpanTable
+  nzSize="middle"
+  [nzData]="listOfData"
+  [nzPageSize]="12"
+  [nzBordered]="true"
+  [nzScroll]="{ x: '800px' }"
+  [nzHideOnSinglePage]="true"
+>
+  <thead>
+    <tr>
+      <th>节次</th>
+      <th>星期日</th>
+      <th>星期一</th>
+      <th>星期二</th>
+      <th>星期三</th>
+      <th>星期四</th>
+      <th>星期五</th>
+      <th>星期六</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of colSpanTable.data; index as i">
+      <tbody class="leftbody">
+        <tr>
+          <td class="leftfirst">第{{ data.key * 2 - 1 }}节</td>
+        </tr>
+        <tr>
+          <td>第{{ data.key * 2 }}节</td>
+        </tr>
+      </tbody>
+      <td>
+        <div class="name">{{ data.day[0].name }}</div>
+        <div class="teacher">{{ data.day[0].teacher }}</div>
+        <div class="location">{{ data.day[0].location }}</div>
+      </td>
+      <td>
+        <div class="name">{{ data.day[1].name }}</div>
+        <div class="teacher">{{ data.day[1].teacher }}</div>
+        <div class="location">{{ data.day[1].location }}</div>
+      </td>
+      <td>
+        <div class="name">{{ data.day[2].name }}</div>
+        <div class="teacher">{{ data.day[2].teacher }}</div>
+        <div class="location">{{ data.day[2].location }}</div>
+      </td>
+      <td>
+        <div class="name">{{ data.day[3].name }}</div>
+        <div class="teacher">{{ data.day[3].teacher }}</div>
+        <div class="location">{{ data.day[3].location }}</div>
+      </td>
+      <td>
+        <div class="name">{{ data.day[4].name }}</div>
+        <div class="teacher">{{ data.day[4].teacher }}</div>
+        <div class="location">{{ data.day[4].location }}</div>
+      </td>
+      <td>
+        <div class="name">{{ data.day[5].name }}</div>
+        <div class="teacher">{{ data.day[5].teacher }}</div>
+        <div class="location">{{ data.day[5].location }}</div>
+      </td>
+      <td>
+        <div class="name">{{ data.day[6].name }}</div>
+        <div class="teacher">{{ data.day[6].teacher }}</div>
+        <div class="location">{{ data.day[6].location }}</div>
+      </td>
+    </tr>
+  </tbody>
+</nz-table>

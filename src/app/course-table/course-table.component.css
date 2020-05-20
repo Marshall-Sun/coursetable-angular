@@ -1,0 +1,56 @@
+.leftbody {
+  display: table-cell;
+  padding-top: unset;
+  padding-bottom: unset;
+}
+
+.leftbody td {
+  width: 200px;
+}
+
+.leftfirst {
+  border-top: 1px solid #f0f0f0;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.location,
+.teacher {
+  font-size: smaller;
+}
+
+.ant-table-cell {
+  text-align: center;
+}
+
+tbody:not(.leftbody) > .ant-table-row > .ant-table-cell:hover {
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  z-index: 10;
+}
+
+.ant-table-tbody > tr > td:hover {
+  border-bottom: transparent;
+}
+
+tbody {
+  background-image: url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/img/angular-bg.jpg");
+}
+
+nz-cascader {
+  width: 215px;
+}
+
+.selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+
+.selector button {
+  z-index: 100;
+}
