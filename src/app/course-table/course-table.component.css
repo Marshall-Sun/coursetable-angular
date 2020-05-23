@@ -36,7 +36,7 @@ tbody:not(.leftbody) > .ant-table-row > .ant-table-cell:hover {
 }
 
 tbody {
-  background-image: url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/img/angular-bg.jpg");
+  background-image: url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/img/angular-bg.jpg");
 }
 
 nz-cascader {

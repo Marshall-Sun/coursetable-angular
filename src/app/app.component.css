@@ -19,7 +19,7 @@ nz-content {
 
 nz-footer {
   background-image: linear-gradient(rgb(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://raw.githubusercontent.com/Marshall-Sun/CDN/master/img/index.jpg");
+    url("https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/img/index.jpg");
   background-position: bottom;
   color: white;
 }

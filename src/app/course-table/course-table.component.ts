@@ -47,7 +47,7 @@ export class CoursetableComponent {
   }
 
   initSemester(): void {
-    this.http.get('https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/semesterList.json')
+    this.http.get('https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/semesterList.json')
       .subscribe(data => {
         this.nzOptions = data;
       });
@@ -73,7 +73,7 @@ export class CoursetableComponent {
   }
 
   initCourse(): void {
-    this.http.get('https://raw.githubusercontent.com/Marshall-Sun/CDN/master/coursetable/myCourse.json')
+    this.http.get('https://cdn.jsdelivr.net/gh/marshall-sun/CDN@latest/coursetable/myCourse.json')
       .subscribe(data => {
         this.MY_JSON = data;
         this.onChanges(this.values);
