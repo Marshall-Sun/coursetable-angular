@@ -18,6 +18,7 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
 
 import { CoursetableComponent } from './course-table/course-table.component';
+import { AppRoutingModule } from './app-routing.module';
 
 registerLocaleData(en);
 
@@ -37,7 +38,8 @@ registerLocaleData(en);
     NzLayoutModule,
     NzIconModule,
     NtkmeButtonModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
