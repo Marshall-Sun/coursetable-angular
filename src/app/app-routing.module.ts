@@ -3,12 +3,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { CoursetableComponent } from './course-table/course-table.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/coursetable/angular', pathMatch: 'full' },
-  { path: '/coursetable/angular', component: CoursetableComponent },
+  { path: '', redirectTo: 'coursetable', pathMatch: 'full' },
+  { path: 'coursetable', component: CoursetableComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
