@@ -19,13 +19,15 @@ import { NtkmeButtonModule } from '@ctrl/ngx-github-buttons';
 
 import { CoursetableComponent } from './course-table/course-table.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NavigationComponent } from './navigation/navigation.component';
 
 registerLocaleData(en);
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursetableComponent
+    CoursetableComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
